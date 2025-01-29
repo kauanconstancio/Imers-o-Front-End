@@ -1,0 +1,15 @@
+@import "assets/styles/reset";
+@import "assets/styles/nav";
+
+body{
+    background-color: #000;
+    .sidebar{
+        .sidebar-navigation{
+            a{
+                img{
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
