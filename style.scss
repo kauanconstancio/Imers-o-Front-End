@@ -1,3 +1,12 @@
+*{
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: #000;
+}
+
 :root{
     --color-text-white: #fff;
     --color-text-lightgray: #b3b3b3;
@@ -10,13 +19,7 @@
 @import "src/assets/styles/reset";
 @import "src/assets/styles/nav";
 @import "src/assets/styles/main-content";
+@import "src/assets/styles/media-queries";
 
 
-*{
-    font-family: 'DM Sans', sans-serif;
-    text-decoration: none;
-}
 
-body{
-    background-color: #000;
-}

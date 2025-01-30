@@ -1,3 +1,12 @@
+* {
+  font-family: "DM Sans", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: #000;
+}
+
 :root {
   --color-text-white: #fff;
   --color-text-lightgray: #b3b3b3;
@@ -324,8 +333,6 @@ body main .main-container {
 }
 body main .main-container .header__navigation {
   display: flex;
-  position: fixed;
-  width: 80vw;
   justify-content: space-between;
   align-items: center;
   padding: 16px;
@@ -396,12 +403,209 @@ body main .main-container .header__navigation .header__login .login {
   font-weight: 700;
   border-radius: 40px;
 }
-
-* {
-  font-family: "DM Sans", sans-serif;
-  text-decoration: none;
+body main .main-container .playlist__container {
+  height: 60vh;
+  padding-top: 16px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: var(--background-gray);
+  /* CARD ARTISTA */
 }
-
-body {
-  background-color: #000;
+body main .main-container .playlist__container #result-playlists .playlist {
+  margin: 24px;
+}
+body main .main-container .playlist__container #result-playlists .playlist #greeting {
+  color: var(--color-text-white);
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+body main .main-container .playlist__container #result-playlists .playlist .greeting-subtitle {
+  color: var(--color-text-white);
+  font-size: 24px;
+  font-weight: 700;
+}
+body main .main-container .playlist__container #result-playlists .offer__scroll-container {
+  max-height: 43vh;
+  margin: 24px;
+  overflow-y: auto;
+}
+body main .main-container .playlist__container #result-playlists .offer__scroll-container .offer__list .offer__list-item {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  gap: 16px;
+  margin-bottom: 16px;
+  /* CODIGO COM JS CALCULANDO OS CARDS POR COLUNA */
+  display: grid;
+  gap: 16px;
+  grid-gap: 32px;
+  margin: 0 auto;
+}
+body main .main-container .playlist__container #result-playlists .offer__scroll-container .offer__list .offer__list-item img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  width: 107px;
+  transform: rotate(25deg) translate(18%, -2%);
+}
+body main .main-container .playlist__container #result-playlists .offer__scroll-container .offer__list .offer__list-item .cards {
+  position: relative;
+  width: 220px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  /* FIM COLOR CARDS */
+}
+body main .main-container .playlist__container #result-playlists .offer__scroll-container .offer__list .offer__list-item .cards span {
+  padding: 16px;
+  position: absolute;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+body main .main-container .playlist__container #result-playlists .offer__scroll-container .offer__list .offer__list-item .cards .card1 {
+  background-color: rgb(0, 100, 80);
+}
+body main .main-container .playlist__container #result-playlists .offer__scroll-container .offer__list .offer__list-item .cards .card2 {
+  background-color: rgb(132, 0, 231);
+}
+body main .main-container .playlist__container #result-playlists .offer__scroll-container .offer__list .offer__list-item .cards .card3 {
+  background: rgb(30, 50, 100);
+}
+body main .main-container .playlist__container #result-playlists .offer__scroll-container .offer__list .offer__list-item .cards .card4 {
+  background: rgb(140, 25, 50);
+}
+body main .main-container .playlist__container #result-playlists .offer__scroll-container .offer__list .offer__list-item .cards .card5 {
+  background: rgb(232, 17, 91);
+}
+body main .main-container .playlist__container #result-playlists .offer__scroll-container .offer__list .offer__list-item .cards .card6 {
+  background: rgb(83, 122, 161);
+}
+body main .main-container .playlist__container #result-playlists .offer__scroll-container .offer__list .offer__list-item .cards .card7 {
+  background: rgb(142, 102, 172);
+}
+body main .main-container .playlist__container #result-playlists .offer__scroll-container .offer__list .offer__list-item .cards .card8 {
+  background: rgb(20, 138, 8);
+}
+body main .main-container .playlist__container #result-playlists .offer__scroll-container .offer__list .offer__list-item .cards .card9 {
+  background: rgb(30, 50, 100);
+}
+body main .main-container .playlist__container #result-playlists .offer__scroll-container .offer__list .offer__list-item .cards .card10 {
+  background: rgb(233, 20, 41);
+}
+body main .main-container .playlist__container #result-playlists .offer__scroll-container .offer__list .offer__list-item .cards .card11 {
+  background: rgb(80, 55, 80);
+}
+body main .main-container .playlist__container #result-playlists .offer__scroll-container .offer__list .offer__list-item .cards .card12 {
+  background: rgb(216, 64, 0);
+}
+body main .main-container .playlist__container #result-playlists .offer__scroll-container .offer__list .offer__list-item .cards .card13 {
+  background: rgb(186, 93, 7);
+}
+body main .main-container .playlist__container #result-playlists .offer__scroll-container .offer__list .offer__list-item .cards .card14 {
+  background: rgb(0, 30, 80);
+}
+body main .main-container .playlist__container #result-playlists .offer__scroll-container .offer__list .offer__list-item .cards .card15 {
+  background: rgb(60, 30, 80);
+}
+body main .main-container .playlist__container #result-playlists .offer__scroll-container::-webkit-scrollbar {
+  width: 1px;
+}
+body main .main-container .playlist__container #result-playlists .offer__scroll-container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+body main .main-container .playlist__container .artist {
+  --column-count: 5;
+  --grid-gap: 24px;
+  --min-container-width: 372px;
+}
+body main .main-container .playlist__container .hidden {
+  display: none;
+}
+body main .main-container .playlist__container .hidden .grid-container {
+  grid-gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  min-width: 767px;
+}
+body main .main-container .playlist__container .hidden .grid-container .artist-card {
+  background: #181818;
+  border-radius: 8px;
+  flex: 1;
+  isolation: isolate;
+  padding: 16px;
+  position: relative;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+body main .main-container .playlist__container .hidden .grid-container .artist-card .card-img {
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+  margin-bottom: 16px;
+}
+body main .main-container .playlist__container .hidden .grid-container .artist-card .card-img .artist-img {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border-radius: 50%;
+}
+body main .main-container .playlist__container .hidden .grid-container .artist-card .card-img .play {
+  position: relative;
+}
+body main .main-container .playlist__container .hidden .grid-container .artist-card .card-img .play .fa-play {
+  position: absolute;
+  right: 10px;
+  top: 120px;
+  padding: 18px;
+  background-color: #1db954;
+  border-radius: 100%;
+  font-size: 14px;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+body main .main-container .playlist__container .hidden .grid-container .artist-card .card-img .play .fa-play:hover {
+  padding: 20px;
+  cursor: pointer;
+}
+body main .main-container .playlist__container .hidden .grid-container .artist-card .card-text {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 62px;
+}
+body main .main-container .playlist__container .hidden .grid-container .artist-card .card-text a {
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: middle;
+}
+body main .main-container .playlist__container .hidden .grid-container .artist-card .card-text .artist-name {
+  box-sizing: border-box;
+  margin-block: 0px;
+  font-size: 16px;
+  font-weight: 700;
+  padding-block-end: 8px;
+}
+body main .main-container .playlist__container .hidden .grid-container .artist-card .card-text .artist-categorie {
+  color: #6a6a6a;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+body main .main-container .playlist__container .hidden .grid-container .artist-card:hover {
+  background-color: #252525;
+}
+body main .main-container .playlist__container .hidden .grid-container .artist-card:hover .play .fa-play {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+body main .main-container .playlist__container #result-artist {
+  padding: 20px 40px;
 }/*# sourceMappingURL=style.css.map */
