@@ -1,5 +1,11 @@
-@import "assets/styles/reset";
+:root{
+    --color-text-white: #fff;
+    --color-text-lightgray: #b3b3b3;
+    --background-gray: #121212;
+}
 
+
+@import "assets/styles/reset";
 @import "assets/styles/nav";
 
 *{
