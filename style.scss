@@ -2,11 +2,15 @@
     --color-text-white: #fff;
     --color-text-lightgray: #b3b3b3;
     --background-gray: #121212;
+    --bg-icon: #131313;
+    --bg-arrow-color: rgba(0, 0, 0.07);
 }
 
 
-@import "assets/styles/reset";
-@import "assets/styles/nav";
+@import "src/assets/styles/reset";
+@import "src/assets/styles/nav";
+@import "src/assets/styles/main-content";
+
 
 *{
     font-family: 'DM Sans', sans-serif;
