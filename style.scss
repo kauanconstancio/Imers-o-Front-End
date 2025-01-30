@@ -1,15 +1,12 @@
 @import "assets/styles/reset";
+
 @import "assets/styles/nav";
+
+*{
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+}
 
 body{
     background-color: #000;
-    .sidebar{
-        .sidebar-navigation{
-            a{
-                img{
-                    width: 100px;
-                }
-            }
-        }
-    }
 }
