@@ -16,10 +16,7 @@ body{
 }
 
 
-@import "src/assets/styles/reset";
-@import "src/assets/styles/nav";
-@import "src/assets/styles/main-content";
-@import "src/assets/styles/media-queries";
-
-
-
+@import "src/styles/reset";
+@import "src/styles/nav";
+@import "src/styles/main-content";
+@import "src/styles/media-queries";
