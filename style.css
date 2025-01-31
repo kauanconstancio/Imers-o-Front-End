@@ -434,14 +434,9 @@ body main .main-container .playlist__container #result-playlists .offer__scroll-
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 16px;
   gap: 16px;
   margin-bottom: 16px;
   /* CODIGO COM JS CALCULANDO OS CARDS POR COLUNA */
-  display: grid;
-  gap: 16px;
-  grid-gap: 32px;
-  margin: 0 auto;
 }
 body main .main-container .playlist__container #result-playlists .offer__scroll-container .offer__list .offer__list-item img {
   position: absolute;
@@ -608,4 +603,10 @@ body main .main-container .playlist__container .hidden .grid-container .artist-c
 }
 body main .main-container .playlist__container #result-artist {
   padding: 20px 40px;
+}
+
+@media (max-width: 1015px) {
+  .offer__list-item {
+    grid-template-columns: 1fr 1fr !important;
+  }
 }/*# sourceMappingURL=style.css.map */
